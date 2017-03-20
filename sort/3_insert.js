@@ -4,8 +4,8 @@ function insertSort(arr) {
     let temp = arr[out]
     let inner = out
     // compare with temp
-    while (inner> 0 && arr[inner - 1] > temp) {
-      arr[inner] = arr[inner-1]
+    while (inner >= 1 && arr[inner - 1] > temp) {
+      arr[inner] = arr[inner - 1]
       inner--
     }
     // temp only inserted once
@@ -14,4 +14,4 @@ function insertSort(arr) {
   return arr
 }
 
-console.log(insertSort([9,0,5,8,4,1,2,7,8,4]))
+console.log(insertSort([9, 0, 5, 8, 4, 1, 2, 7, 8, 4]))
